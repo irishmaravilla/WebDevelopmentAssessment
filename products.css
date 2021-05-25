@@ -1,0 +1,133 @@
+
+/* body{
+    background-color:whitesmoke;
+} */
+/* Navbar container */
+body{
+  padding:0;
+  margin: 0; 
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:grey;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+ /* PROJECT GRID  */
+ .grid-wrapper{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    /* wag kakalimutan ang value ni fr  */
+    
+ }
+ /* Size ng image  */
+.box > img {
+    width: 100%;
+}
+.box{
+    background-color: #767171;
+    padding: 5px;
+    margin: 20px;
+}
+
+.black{
+    background: white; /* Old browsers */
+    background: -moz-linear-gradient(top, white 0%, white 44%, #C0C0C0 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,white), color-stop(44%,white), color-stop(100%,#C0C0C0)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, white 0%,white 44%,#C0C0C0 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, white 0%,white 44%,#C0C0C0 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, white 0%,white 44%,#C0C0C0 100%); /* IE10+ */
+    background: linear-gradient(top, white 0%,white 44%,#C0C0C0 100%); /* W3C */
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
